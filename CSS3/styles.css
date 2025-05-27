@@ -1,0 +1,100 @@
+/* Reset margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+#mainHeader {
+  background: linear-gradient(to right, #00f260, #0575e6);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style for event cards */
+.eventCard {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin: 15px;
+  background-color: #f9f9f9;
+  outline: 2px dashed #ccc;
+}
+
+/* Style for CTA button */
+.cta-button {
+  background-color: #007BFF;
+  color: white;
+}
+
+/* Typography */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+}
+
+h2 {
+  color: #333;
+  text-transform: uppercase;
+}
+
+p {
+  letter-spacing: 0.5px;
+}
+
+/* Links */
+a:link { color: blue; }
+a:visited { color: purple; }
+a:hover { text-decoration: underline; }
+a:active { color: red; }
+
+/* Lists */
+nav ul {
+  list-style-type: none;
+  padding: 10px;
+}
+
+nav li {
+  margin: 5px 0;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* News section with columns */
+.news {
+  column-count: 2;
+  column-gap: 30px;
+  column-rule: 1px solid gray;
+  margin: 20px;
+}
+
+/* Responsive media queries */
+@media (max-width: 768px) {
+  nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  body {
+    font-size: 14px;
+  }
+
+  img {
+    width: 100%;
+  }
+}
